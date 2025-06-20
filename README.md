@@ -34,6 +34,22 @@ You can find this through the Claude Desktop menu:
 }
 ```
 
+```json
+{
+  "tools": {
+    "taskmanager": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp-taskmanager"
+      ]
+    }
+  }
+}
+```
+
 ## For Developers
 
 ### Prerequisites
