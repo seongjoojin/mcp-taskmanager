@@ -1,0 +1,23 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/index.js'], env: config.taskManagerFilePath ? { TASK_MANAGER_FILE_PATH: config.taskManagerFilePath } : {} })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required: []
+    properties:
+      taskManagerFilePath:
+        type: string
+        description: Optional path to tasks file, container must have write permissions.
+          Defaults to /root/Documents/tasks.json
+      port:
+        type: number
+        default: 0
+        description: Unused for stdio servers
+  exampleConfig:
+    taskManagerFilePath: /tmp/tasks.json

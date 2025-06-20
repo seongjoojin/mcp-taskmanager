@@ -4,11 +4,22 @@ Model Context Protocol server for Task Management. This allows Claude Desktop (o
 
 <a href="https://glama.ai/mcp/servers/bdjh7kx05h"><img width="380" height="200" src="https://glama.ai/mcp/servers/bdjh7kx05h/badge" alt="@kazuph/mcp-taskmanager MCP server" /></a>
 
+
+
 ## Quick Start (For Users)
 
 ### Prerequisites
 - Node.js 18+ (install via `brew install node`)
 - Claude Desktop (install from https://claude.ai/desktop)
+
+
+### Installing via Smithery
+
+To install @kazuph/mcp-taskmanager for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kazuph/mcp-taskmanager):
+
+```bash
+npx -y @smithery/cli install @kazuph/mcp-taskmanager --client claude
+```
 
 ### Configuration
 
