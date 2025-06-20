@@ -43,7 +43,7 @@ You can find this through the Claude Desktop menu:
         "run",
         "--rm",
         "-i",
-        "mcp-taskmanager"
+        "seongjoojin/mcp-taskmanager"
       ]
     }
   }
